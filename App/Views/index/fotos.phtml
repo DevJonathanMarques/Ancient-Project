@@ -1,0 +1,35 @@
+<div class="container p-3 mt-3 mb-4" id="container">
+	<div class="row d-flex justify-content-center">
+		<div class="row col-8 d-flex justify-content-center">
+			
+			<!-- EXIBIÇÃO DAS NOTÍCIA -->
+			<div class="row">
+				
+				<?php foreach ($this->view->noticias as $key => $noticia) { ?>
+				<div class="cartao">
+					<h3> <?= $noticia['titulo'] ?> </h3>
+
+					<img src="<?= $noticia['capa'] ?>" class="img-fluid">
+
+					<a href="/noticia?id=<?= $noticia['id'] ?>" class="mt-2 btn btn-light">Clique para ler!</a>
+				</div>
+				<?php } ?>
+
+			</div>
+
+			<!-- ÁREA DE NAGEVAÇÃO -->
+			<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+				<ul class="pagination">
+					<li class="page-item"><a class="page-link" href="#">Primeira</a></li>
+					
+					<?php for ($i=1; $i <= $this->view->total_paginas; $i++) { ?>
+					<li class="page-item"><a class="page-link" href="/fotos?pag=<?= $i ?>"> <?= $i ?> </a></li>
+					<?php } ?>
+
+					<li class="page-item"><a class="page-link" href="#">Última</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div>

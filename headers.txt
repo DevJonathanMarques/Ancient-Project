@@ -1,0 +1,98 @@
+<!-- HEADER 1 -->
+	<header id="nav1" class="container-fluid">
+
+		<div class="row d-flex justify-content-center p-4">
+			<div class="row col-6 d-flex justify-content-center">
+				<a href="/" class="navbar-brand d-flex justify-content-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+
+				<div class="row">
+					<nav class="col-8 nav navbar navbar-expand-sm">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
+							<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
+							<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
+							<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
+							<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
+							<li class="nav-item"><a href="/biografias" class="nav-links">Biografias</a></li>
+							<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<img src="Imagens/logo.jpg" class="img-fluid">
+			</div>
+		</div>
+
+	</header>
+
+	<!-- HEADER 2 -->
+	<header id="nav2" class="container-fluid">
+
+		<div class="row d-flex justify-content-center">
+			
+			<div class="col-5 d-flex">
+				<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+			</div>
+
+			<div class="col-2">
+				<img src="Imagens/logo.jpg" class="img-fluid">
+			</div>
+
+		</div>
+
+		<div class="row d-flex justify-content-center">
+			<nav class="col-8 nav navbar navbar-expand-sm">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
+					<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
+					<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
+					<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
+					<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
+					<li class="nav-item"><a href="/biografia" class="nav-links">Biografia</a></li>
+					<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<!-- HEADER 3 -->
+	<header id="nav3" class="container-fluid">
+
+		<nav class="nav navbar navbar-expand-md">
+			
+			<div class="row col-10 p-4 d-flex">
+
+				<div class="col-3">
+					<img src="Imagens/logo.jpg" class="img-fluid">
+				</div>
+
+				<div class="col-9 d-flex">
+					<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+				</div>
+
+			</div>
+
+			<div class="col-2 align-self-center">
+				<button class="btn btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#nav-burguer" aria-expanded="false" aria-controls="nav-burguer"><i class="fa-solid fa-bars"></i></button>
+			</div>
+
+			<div class="col-12">
+				<div class="collapse" id="nav-burguer">
+					<ul class="navbar-nav">
+						<li class="nav-item d-flex justify-content-center"> <a href="/" class="col-5 d-flex justify-content-center nav-links">Home</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/idades" class="col-5 d-flex justify-content-center nav-links">Idades</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/mundo" class="col-5 d-flex justify-content-center nav-links">Mundo</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/brasil" class="col-5 d-flex justify-content-center nav-links">Brasil</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/fotos" class="col-5 d-flex justify-content-center nav-links">Fotos</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/search" class="col-5 d-flex justify-content-center nav-links"><i class="fa-solid fa-magnifying-glass"></i></a> </li>
+					</ul>
+
+				</div>
+			</div>
+
+		</nav>
+
+	</header>

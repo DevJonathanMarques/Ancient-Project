@@ -1,0 +1,52 @@
+<!-- ÁREA DE PESQUISA DE NOTÍCIAS -->
+<form action="/pesquisarNoticias" method="get" class="row d-flex justify-content-center">
+	<div class="col-8">
+		<div class="input-group">
+
+			<input name="dados" type="text" class="form-control" placeholder="Pesquisa por uma notícia">
+			<div class="input-group-append">
+				<button type="submit" class="btn btn-dark">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</div>
+
+		</div>
+	</div>
+</form>
+
+<!-- ÁREA DE EXIBIÇÃO DE NOTÍCIAS -->
+<div class="row mt-3">
+
+	<?php foreach ($this->view->noticias as $key => $noticia) { ?>
+	<div class="noticia-bd col-3 bg-primary p-3 mb-4">
+		<h4> <?= $noticia['titulo'] ?> </h4>
+
+		<small class="data">Postado em: <?= $noticia['data'] ?> </small>
+
+		<img src="<?= $noticia['capa'] ?>" class="img-fluid">
+
+		<div class="row d-flex justify-content-center">
+			<div class="col-5 d-flex justify-content-center">
+				<a href="/editor_noticia?id=<?= $noticia['id'] ?>" class="btn btn-info"><i class="fa-solid fa-pen"></i></a>
+			</div>
+			<div class="col-5 d-flex justify-content-center">
+				<a href="/remover_noticia?id=<?= $noticia['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+			</div>
+		</div>
+	</div>
+	<?php } ?>
+
+</div>
+
+<!-- ÁREA DE NAVEGAÇÃO -->
+<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+	<ul class="pagination">
+		<li class="page-item"><a class="page-link" href="#">Primeira</a></li>
+		
+		<?php for ($i=1; $i <= $this->view->total_paginas; $i++) { ?>
+		<li class="page-item"><a class="page-link" href="/news?pag=<?= $i ?>"> <?= $i ?> </a></li>
+		<?php } ?>
+
+		<li class="page-item"><a class="page-link" href="#">Última</a></li>
+	</ul>
+</nav>

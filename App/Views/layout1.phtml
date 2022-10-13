@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ancient</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+	<link rel="icon" href="Imagens/icon.png">
+
+	<!-- Font Awesome - Icons -->
+	<script src="https://kit.fontawesome.com/5d9c2ca835.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<!-- NAV 1 - LARGE E EXTRA LARGE -->
+	<header id="nav1" class="container-fluid">
+
+		<div class="row d-flex justify-content-center p-4">
+			<div class="row col-6 d-flex justify-content-center">
+				<a href="/" class="navbar-brand d-flex justify-content-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+
+				<div class="row">
+					<nav class="col-8 nav navbar navbar-expand-sm">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
+							<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
+							<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
+							<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
+							<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
+							<li class="nav-item"><a href="/biografias" class="nav-links">Biografias</a></li>
+							<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<img src="Imagens/logo.jpg" class="img-fluid">
+			</div>
+		</div>
+
+	</header>
+
+	<!-- NAV 2 - MEDIUM -->
+	<header id="nav2" class="container-fluid">
+
+		<div class="row d-flex justify-content-center">
+			
+			<div class="col-5 d-flex">
+				<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+			</div>
+
+			<div class="col-2">
+				<img src="Imagens/logo.jpg" class="img-fluid">
+			</div>
+
+		</div>
+
+		<div class="row d-flex justify-content-center">
+			<nav class="col-8 nav navbar navbar-expand-sm">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
+					<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
+					<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
+					<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
+					<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
+					<li class="nav-item"><a href="/biografia" class="nav-links">Biografia</a></li>
+					<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+	<!-- NAV 3 - EXTRA SMALL E SMALL -->
+	<header id="nav3" class="container-fluid">
+
+		<nav class="nav navbar navbar-expand-md">
+			
+			<div class="row col-10 p-4 d-flex">
+
+				<div class="col-3">
+					<img src="Imagens/logo.jpg" class="img-fluid">
+				</div>
+
+				<div class="col-9 d-flex">
+					<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+				</div>
+
+			</div>
+
+			<div class="col-2 align-self-center">
+				<button class="btn btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#nav-burguer" aria-expanded="false" aria-controls="nav-burguer"><i class="fa-solid fa-bars"></i></button>
+			</div>
+
+			<div class="col-12">
+				<div class="collapse" id="nav-burguer">
+					<ul class="navbar-nav">
+						<li class="nav-item d-flex justify-content-center"> <a href="/" class="col-5 d-flex justify-content-center nav-links">Home</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/idades" class="col-5 d-flex justify-content-center nav-links">Idades</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/mundo" class="col-5 d-flex justify-content-center nav-links">Mundo</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/brasil" class="col-5 d-flex justify-content-center nav-links">Brasil</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/fotos" class="col-5 d-flex justify-content-center nav-links">Fotos</a> </li>
+						<li class="nav-item d-flex justify-content-center"> <a href="/search" class="col-5 d-flex justify-content-center nav-links"><i class="fa-solid fa-magnifying-glass"></i></a> </li>
+					</ul>
+
+				</div>
+			</div>
+
+		</nav>
+
+	</header>
+
+	<!-- CONTEÚDO -->
+	<?php $this->content() ?>
+
+	<!-- FOOTER -->
+	<footer class="container-fluid">
+		
+		<div class="row d-flex" id="footer">
+			
+			<div class="col-md-3 col-12 align-self-center">
+				<img src="Imagens/ANCIENT.png" class="img-fluid">
+			</div>
+
+			<div class="col-md-3 col-lg-2 col-6">
+				<h4>Company</h4>
+				<ul class="navbar-nav">
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Empregos</a></li>
+					<li><a href="">Imprensa</a></li>
+					<li><a href="">Novidade</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 col-lg-2 col-6">
+				<h4>Comunidade</h4>
+				<ul class="navbar-nav">
+					<li><a href="">Professores</a></li>
+					<li><a href="">Jornalistas</a></li>
+					<li><a href="">Desenvolvedores</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 col-lg-2 col-12">
+				<h4>Links úteis</h4>
+				<ul class="navbar-nav">
+					<li><a href="">Ajuda</a></li>
+					<li><a href="">Referências Bibliográficas</a></li>
+					<li><a href="">Caixa Postal</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-12 col-lg-3 align-self-center">
+				<p>&copy; Copyright 2000-2021 ANCIENT</p>
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+</html>

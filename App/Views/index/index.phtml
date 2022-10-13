@@ -1,0 +1,98 @@
+<div class="container p-3 mt-3 mb-4" id="container">
+	<div class="row d-flex justify-content-around">
+		
+		<!-- ÁREA LATERAL -->
+		<aside class="col-3">
+
+			<div class="cartao">
+				<h3>Biografias</h3>
+
+				<ul class="navbar-nav">
+
+					<?php foreach ($this->view->biografias as $key => $biografia) { ?>
+					<li class="links-aside"> <a href="/noticia?id=<?= $biografia['id'] ?>" class="nav-link"><?= $biografia['titulo'] ?></a> </li>
+					<?php } ?>
+
+					<li class="bio"> <a href="/biografias" class="nav-link all-bios">Todas Biografias</a> </li>
+				</ul>
+			</div>
+			
+		</aside>
+		<!--------------------->
+
+		<!-- ÁREA DE CONTEÚDO 1 (NOTÍCIAS SOBRE O BRASIL) -->
+		<section class="col-md-4">
+			
+			<div class="cartao">
+				<h3> <?= $this->view->noticiaBrasil['titulo'] ?> </h3>
+
+				<img src="<?= $this->view->noticiaBrasil['capa'] ?>" class="img-fluid">
+
+				<p> <?= $this->view->noticiaBrasil['descricao'] ?> </p>
+
+				<a href="/noticia?id=<?= $this->view->noticiaBrasil['id'] ?>" class="btn btn-light">Leia Mais!</a>
+			</div>
+
+			<div class="cartao">
+
+				<h3>Brasil</h3>
+
+				<?php foreach ($this->view->noticiasBrasil as $key => $noticia) { ?>
+					<div class="noticia row">
+						<div class="col-md-6 col-sm-6 col-6 d-flex">
+							<img src="<?= $noticia['capa'] ?>" class="img-fluid align-self-center">
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-sm-6 col-6">
+							<h4><?= $noticia['titulo'] ?></h4>
+
+							<p><?= $noticia['descricao'] ?></p>
+
+							<a href="/noticia?id=<?= $noticia['id'] ?>" class="btn btn-light btn-sm">Leia Mais!</a>
+						</div>
+					</div>
+				<?php } ?>
+
+			</div>
+
+		</section>
+
+		<!-- ÁREA DE CONTEÚDO 2 (NOTÍCIAS SOBRE O MUNDO) -->
+		<section class="col-md-4">
+			
+			<div class="cartao">
+				<h3> <?= $this->view->noticiaMundo['titulo'] ?> </h3>
+
+				<img src="<?= $this->view->noticiaMundo['capa'] ?>" class="img-fluid">
+
+				<p> <?= $this->view->noticiaMundo['descricao'] ?> </p>
+
+				<a href="/noticia?id=<?= $this->view->noticiaMundo['id'] ?>" class="btn btn-light">Leia Mais!</a>
+			</div>
+
+			<div class="cartao">
+
+				<h3>Mundo</h3>
+
+				<?php foreach ($this->view->noticiasMundo as $key => $noticia) { ?>
+					<div class="noticia row">
+						<div class="col-md-6 col-sm-6 col-6 d-flex">
+							<img src="<?= $noticia['capa'] ?>" class="img-fluid align-self-center">
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-sm-6 col-6">
+							<h4><?= $noticia['titulo'] ?></h4>
+
+							<p><?= $noticia['descricao'] ?></p>
+
+							<a href="/noticia?id=<?= $noticia['id'] ?>" class="btn btn-light btn-sm">Leia Mais!</a>
+						</div>
+					</div>
+				<?php } ?>
+
+			</div>
+
+		</section>
+
+	</div>
+</div>

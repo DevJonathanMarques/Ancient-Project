@@ -1,0 +1,14 @@
+<div class="container p-3 mt-3 mb-4" id="container">
+	<div class="row d-flex justify-content-center">
+		<div class="exibir-noticia row pb-3 col-12 col-sm-12 col-md-8 d-flex justify-content-center">
+			
+			<h1><?= $this->view->noticia['titulo'] ?></h1>
+			<small>Postado em: <?= $this->view->noticia['data'] ?></small>
+
+			<img src="<?= $this->view->noticia['capa'] ?>" class="img-fluid">
+
+			<p><?= nl2br($this->view->noticia['conteudo']) ?></p>
+
+		</div>
+	</div>
+</div>

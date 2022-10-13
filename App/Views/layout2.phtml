@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ancient - ADM</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+	<link rel="icon" href="Imagens/icon.png">
+
+	<script src="https://kit.fontawesome.com/5d9c2ca835.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="adm" class="container-fluid">
+
+	<div class="row">
+		
+		<div class="col-2"><!-- ESPAÇO PARA O DASHBOARD --></div>
+
+		<!-- DASHBOARD -->
+		<div id="dashboard" class="col-2">
+			<img src="Imagens/ANCIENT.png" class="img-fluid">
+
+			<a href="/criar_noticia" class="btn btn-warning text-light mt-4 col-12">Criar Notícia</a>
+			<a href="/news" class="btn btn-primary mt-2 col-12">Todas Notícias</a>
+			<a href="/criar_bio" class="btn btn-success mt-2 col-12">Criar Biografia</a>
+			<a href="/bios" class="btn btn-roxo mt-2 col-12">Todas Biografias</a>
+		</div>
+
+		<!-- EXIBIÇÃO DO CONTEÚDO -->
+		<div class="col-10 p-4">
+			
+			<?php $this->content() ?>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
