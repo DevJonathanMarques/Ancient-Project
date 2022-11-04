@@ -27,107 +27,183 @@
 
 <body>
 
-	<!-- NAV 1 - LARGE E EXTRA LARGE -->
-	<header id="nav1" class="container-fluid">
+	<!-- BARRA DE NAVEGAÇÃO -->
+	<nav class="navbar navbar-expand-lg bg-secondary">
+		<div class="container-fluid">
 
-		<div class="row d-flex justify-content-center p-4">
-			<div class="row col-6 d-flex justify-content-center">
-				<a href="/" class="navbar-brand d-flex justify-content-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+			<a class="navbar-brand" href="/"> <img src="IMAGENS/BLACK-ANCIENT.png" class="img-fluid"> </a>
 
-				<div class="row">
-					<nav class="col-8 nav navbar navbar-expand-sm">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
-							<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
-							<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
-							<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
-							<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
-							<li class="nav-item"><a href="/biografias" class="nav-links">Biografias</a></li>
-							<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+						<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
 						</ul>
-					</nav>
-				</div>
-			</div>
+					</li>
 
-			<div class="col-2">
-				<img src="Imagens/logo.jpg" class="img-fluid">
-			</div>
-		</div>
-
-	</header>
-
-	<!-- NAV 2 - MEDIUM -->
-	<header id="nav2" class="container-fluid">
-
-		<div class="row d-flex justify-content-center">
-			
-			<div class="col-5 d-flex">
-				<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
-			</div>
-
-			<div class="col-2">
-				<img src="Imagens/logo.jpg" class="img-fluid">
-			</div>
-
-		</div>
-
-		<div class="row d-flex justify-content-center">
-			<nav class="col-8 nav navbar navbar-expand-sm">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="/" class="nav-links">Home</a></li>
-					<li class="nav-item"><a href="/idades" class="nav-links">Idades</a></li>
-					<li class="nav-item"><a href="/mundo" class="nav-links">Mundo</a></li>
-					<li class="nav-item"><a href="/brasil" class="nav-links">Brasil</a></li>
-					<li class="nav-item"><a href="/fotos" class="nav-links">Fotos</a></li>
-					<li class="nav-item"><a href="/biografia" class="nav-links">Biografia</a></li>
-					<li class="nav-item"><a href="/search" class="nav-links"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+					<li class="nav-item">
+						<a class="nav-link disabled">Disabled</a>
+					</li>
 				</ul>
-			</nav>
+
+				<form id="search" class="d-flex p-lg-3" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-light" type="submit">Search</button>
+				</form>
+
+			</div>
+
 		</div>
+	</nav>
 
-	</header>
+	<!-- CAROUSEL -->
+	<div id="carousel" class="container-fluid mt-5">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
-	<!-- NAV 3 - EXTRA SMALL E SMALL -->
-	<header id="nav3" class="container-fluid">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						
+						<div class="col-md-6 col-12 d-flex justify-content-center">
+							<div class="col-10"> <img src="IMAGENS/brasil.jpg" class="carousel-image img-fluid"> </div>
+						</div>
 
-		<nav class="nav navbar navbar-expand-md">
-			
-			<div class="row col-10 p-4 d-flex">
+						<div class="col-md-6 d-flex">
+							<div class="carousel-card align-self-center col-lg-10">
+								<h1 class="text-center">Descoberta do Brasil</h1>
+								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
+							</div>
+						</div>
 
-				<div class="col-3">
-					<img src="Imagens/logo.jpg" class="img-fluid">
+					</div>
 				</div>
 
-				<div class="col-9 d-flex">
-					<a href="/" class="navbar-brand align-self-center"> <img src="Imagens/marca.jpg" class="img-fluid"> </a>
+				<div class="carousel-item">
+					<div class="row">
+						
+						<div class="col-md-6 col-12 d-flex justify-content-center">
+							<div class="col-10"> <img src="IMAGENS/egito.jpg" class="carousel-image img-fluid"> </div>
+						</div>
+
+						<div class="col-md-6 d-flex">
+							<div class="carousel-card align-self-center col-lg-10">
+								<h1 class="text-center">Egito Antigo</h1>
+								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
 
-			</div>
+				<div class="carousel-item">
+					<div class="row">
+						
+						<div class="col-md-6 col-12 d-flex justify-content-center">
+							<div class="col-10"> <img src="IMAGENS/revolucao.jpg" class="carousel-image img-fluid"> </div>
+						</div>
 
-			<div class="col-2 align-self-center">
-				<button class="btn btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#nav-burguer" aria-expanded="false" aria-controls="nav-burguer"><i class="fa-solid fa-bars"></i></button>
-			</div>
+						<div class="col-md-6 d-flex">
+							<div class="carousel-card align-self-center col-lg-10">
+								<h1 class="text-center">Revolução Francesa</h1>
+								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
+							</div>
+						</div>
 
-			<div class="col-12">
-				<div class="collapse" id="nav-burguer">
-					<ul class="navbar-nav">
-						<li class="nav-item d-flex justify-content-center"> <a href="/" class="col-5 d-flex justify-content-center nav-links">Home</a> </li>
-						<li class="nav-item d-flex justify-content-center"> <a href="/idades" class="col-5 d-flex justify-content-center nav-links">Idades</a> </li>
-						<li class="nav-item d-flex justify-content-center"> <a href="/mundo" class="col-5 d-flex justify-content-center nav-links">Mundo</a> </li>
-						<li class="nav-item d-flex justify-content-center"> <a href="/brasil" class="col-5 d-flex justify-content-center nav-links">Brasil</a> </li>
-						<li class="nav-item d-flex justify-content-center"> <a href="/fotos" class="col-5 d-flex justify-content-center nav-links">Fotos</a> </li>
-						<li class="nav-item d-flex justify-content-center"> <a href="/search" class="col-5 d-flex justify-content-center nav-links"><i class="fa-solid fa-magnifying-glass"></i></a> </li>
-					</ul>
-
+					</div>
 				</div>
 			</div>
 
-		</nav>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				<i id="prev" class="fa-solid fa-circle-arrow-left fa-3x"></i>
+			</button>
 
-	</header>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				<i id="next" class="fa-solid fa-circle-arrow-right fa-3x"></i>
+			</button>
 
-	<!-- CONTEÚDO -->
-	<?php $this->content() ?>
+		</div>
+	</div>
+
+	<!-- ÚLTIMAS NOTÍCIAS -->
+	<div id="last" class="container bg-secondary">
+		<div class="col-4"> <h1 id="title">Últimas Artigos</h1> </div>
+
+		<div class="row pt-3 justify-content-around">
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>As Cruzadas</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/cruzadas.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>Revolução Industrial</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/industrial.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>Pré-História</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/pre.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ÚLTIMAS BIOGRAFIAS -->
+	<div id="last" class="container bg-secondary">
+		<div class="col-5"> <h1 id="title">Últimas Biografias</h1> </div>
+
+		<div class="row pt-3 justify-content-around">
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>Dom Pedro I</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/pedro.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>Getúlio Vargas</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/vargas.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+			<div class="last-card col-3">
+				<div class="col-12"> <h1>Albert Einsten</h1> </div>
+
+				<div class="col-12"> <img src="IMAGENS/einsten.jpg" class="img-fluid"> </div>
+
+				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+			</div>
+
+		</div>
+	</div>
 
 	<!-- FOOTER -->
 	<footer class="container-fluid">
@@ -135,7 +211,7 @@
 		<div class="row d-flex" id="footer">
 			
 			<div class="col-md-3 col-12 align-self-center">
-				<img src="Imagens/ANCIENT.png" class="img-fluid">
+				<img src="Imagens/WHITE-ANCIENT.png" class="img-fluid">
 			</div>
 
 			<div class="col-md-3 col-lg-2 col-6">

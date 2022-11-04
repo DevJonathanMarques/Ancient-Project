@@ -60,106 +60,74 @@
 		padding: 0;
 	}
 
-	header {
-		background: url(../Imagens/fundo.jpg);
+	body, html {
+		overflow-x: hidden;
 	}
 
-	.nav-links:hover {
-		background: gray;
-		border:3px solid black;
-		color: rgba(0, 0, 0, 1);
+	/************ NAV *************/
+
+	#search {
+		background: rgba(88, 88, 88, 0.8);
+		border-radius: 50px;
 	}
 
-	#nav-burguer {
-		background: rgba(0, 0, 0, 0.6);
+	/************ CAROUSEL *************/
+
+	#carousel {
+		padding: 50px 0px;
+		background-image: url('../IMAGENS/mapa.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
-	#nav-burguer a {
-		margin: 5px 0px;
-		background: white;
-		border: 3px solid gray;
-		color: rgba(0, 0, 0, 0.7);
+	.carousel-image {
+		border: 5px solid black;
+		border-radius: 100px;
 	}
 
-	#container {
-		background: gray;
-	}
-
-	.cartao {
-		background: #000;
-		padding: 10px;
-		margin: 15px 0px;
-	}
-
-	.cartao h3 {
-		background: lightgray;
-		padding: 5px;
-	}
-
-	.cartao img {
-		border: 3px solid lightgray;
-	}
-
-	.cartao p {
+	.carousel-card {
+		background: rgba(88, 88, 88, 0.8);
+		border: 5px solid black;
+		border-radius: 50px;
+		padding: 20px;
 		color: white;
-		padding: 10px 0px 5px 0px;
-		text-align: justify;
 	}
 
-	.links-aside {
-		text-align: center;
-		margin: 2px 0px;
-		border: 1px solid gray;
-		padding: 2px 1px;
-		color: rgba(255, 255, 255, 0.7);
+	button.carousel-control-next, button.carousel-control-prev {
+		margin-left: -10px;
+		margin-right: -10px;
+		width: 5%;
 	}
 
-	.bio {
-		text-align: center;
-		margin: 2px 0px;
-		border: 3px solid gray;
-		padding: 2px 1px;
-		background: #2E2E2E;
-		color: rgba(255, 255, 255, 1);
+	#prev, #next {
+		color: black;
 	}
 
-	.links-aside:hover {
-		background: gray;
+	/************ MODELOS *************/
+
+	#last {
+		margin-top: 50px;
+		padding: 25px 0px;
 	}
 
-	.all-bios:hover {
-		background: #424242;
+	#title {
+		background: rgb(88, 88, 88);
+		border: 3px solid black;
+		padding: 10px 20px;
+		border-radius: 50px;
+		margin-left: 10px;
 	}
 
-	#cadastro-sm h3 {
-		text-align: center;
-		background: lightgray;
-		padding: 5px;
+	.last-card {
+		background: rgb(88, 88, 88);
+		border: 3px solid black;
 	}
 
-	.exibir-noticia h1 {
-		background: lightgray;
-		padding: 5px;
-		border: 5px solid #000;
-	}
-
-	.exibir-noticia small {
-		margin-bottom: 10px;
-	}
-
-	.exibir-noticia img {
-		border: 10px solid #000;
-		padding: 0px;
-	}
-
-	.exibir-noticia p {
-		margin: 15px 0px;
-		font-weight: 800;
-		font-size: 1.1em;
-		text-align: justify;
-	}
+	/************ FOOTER *************/
 
 	footer {
+		margin-top: 50px;
 		padding: 15px 0px;
 		background: #000;
 		color: #FFF;
@@ -182,57 +150,6 @@
 
 	/* Extra small devices (portrait phones, less than 576px) */
 	@media (max-width: 575.98px) {
-		
-		#nav1 {
-			display: none
-		}
-
-		#nav2 {
-			display: none
-		}
-
-		button.btn.btn-nav {
-			border: 3px solid #000;
-			color: #000;
-			background: rgba(0, 0, 0, 0.3);
-		}
-
-		button.btn.btn-nav:hover {
-			border: 3px solid #000;
-			background: rgba(0, 0, 0, 0.6);
-		}
-
-		.nav-links {
-			background: white;
-			margin: 0px 2px;
-			border: 3px solid gray;
-			padding: 15px;
-			display: block;
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.7);
-		}
-
-		aside {
-			display: none;
-		}
-
-		.noticia {
-			padding: 15px 0px;
-			border-bottom: 1px solid gray;
-		}
-
-		.noticia p {
-			color: white;
-			padding: 0px;
-			margin: 5px 0px;
-			font-size: 0.7em
-		}
-
-		.noticia h4 {
-			color: white;
-			padding: 0px;
-			font-size: 0.9em;
-		}
 
 		#footer div {
 			margin: 10px 0px;
@@ -242,57 +159,6 @@
 
 /* Small devices (landscape phones, 576px and up) */
 	@media (min-width: 576px) and (max-width: 767.98px) {
-		
-		#nav1 {
-			display: none
-		}
-
-		#nav2 {
-			display: none
-		}
-
-		button.btn.btn-nav {
-			border: 3px solid #000;
-			color: #000;
-			background: rgba(0, 0, 0, 0.3);
-		}
-
-		button.btn.btn-nav:hover {
-			border: 3px solid #000;
-			background: rgba(0, 0, 0, 0.6);
-		}
-
-		.nav-links {
-			background: white;
-			margin: 0px 2px;
-			border: 3px solid gray;
-			padding: 15px;
-			display: block;
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.7);
-		}
-
-		aside {
-			display: none;
-		}
-
-		.noticia {
-			padding: 15px 0px;
-			border-bottom: 1px solid gray;
-		}
-
-		.noticia p {
-			color: white;
-			padding: 0px;
-			margin: 5px 0px;
-			font-size: 0.7em
-		}
-
-		.noticia h4 {
-			color: white;
-			padding: 0px;
-			font-size: 0.9em;
-		}
 
 		#footer div {
 			margin: 10px 0px;
@@ -303,127 +169,20 @@
 /* Medium devices (tablets, 768px and up) */
 	@media (min-width: 768px) and (max-width: 991.98px) {
 		
-		#nav1 {
-			display: none
-		}
-
-		#nav3 {
-			display: none
-		}
-
-		.nav-links {
-			background: white;
-			margin: 0px 2px;
-			border: 3px solid gray;
-			padding: 15px;
-			display: block;
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.7);
-		}
-
-		.noticia {
-			padding: 15px 0px;
-			border-bottom: 1px solid gray;
-		}
-
-		.noticia img {
-			display: none;
-		}
-
-		.noticia p {
-			color: white;
-			padding: 0px;
-			margin: 5px 0px;
-			font-size: 0.7em
-		}
-
-		.noticia h4 {
-			color: white;
-			padding: 0px;
-			font-size: 0.9em;
-		}
+		
 
 	}
 
 /* Large devices (desktops, 992px and up) */
 	@media (min-width: 992px) and (max-width: 1199.98px) {
 		
-		.nav-links {
-			background: white;
-			margin-top: 35px;
-			margin-right: 3px;
-			border: 3px solid gray;
-			padding: 10px;
-			display: block;
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.7);
-		}
-
-		#nav2 {
-			display: none
-		}
-
-		#nav3 {
-			display: none
-		}
-
-		.noticia {
-			padding: 15px 0px;
-			border-bottom: 1px solid gray;
-		}
-
-		.noticia p {
-			color: white;
-			padding: 0px;
-			margin: 5px 0px;
-			font-size: 0.7em
-		}
-
-		.noticia h4 {
-			color: white;
-			padding: 0px;
-			font-size: 0.9em;
-		}
+		
 
 	}
 
 /* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
 		
-		.nav-links {
-			background: white;
-			margin: 0px 5px;
-			border: 3px solid gray;
-			padding: 10px;
-			display: block;
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.7);
-		}
-
-		#nav2 {
-			display: none
-		}
-
-		#nav3 {
-			display: none
-		}
-
-		.noticia {
-			padding: 15px 0px;
-			border-bottom: 1px solid gray;
-		}
-
-		.noticia p {
-			color: white;
-			padding: 0px;
-			margin: 5px 0px;
-			font-size: 0.7em
-		}
-
-		.noticia h4 {
-			color: white;
-			padding: 0px;
-			font-size: 0.9em;
-		}
+		
 
 	}
