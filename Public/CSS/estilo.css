@@ -55,50 +55,35 @@
 
 /* PAGINA PRINCIPAL */
 
+	@font-face {
+		font-family: morris;
+		src: url("morris.woff");
+	}
+
 	* {
 		margin: 0;
 		padding: 0;
 	}
 
-	body, html {
+	#html, #body {
 		overflow-x: hidden;
+		background: url('../IMAGENS/fundo.png'), lightgray;
+		background-size: cover;
 	}
 
 	/************ NAV *************/
 
+	#nav {
+		background: #881616;
+		font-family: morris;
+	}
+
 	#search {
-		background: rgba(88, 88, 88, 0.8);
+		background: #E3493B;
 		border-radius: 50px;
 	}
 
 	/************ CAROUSEL *************/
-
-	#carousel {
-		padding: 50px 0px;
-		background-image: url('../IMAGENS/mapa.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
-
-	.carousel-image {
-		border: 5px solid black;
-		border-radius: 100px;
-	}
-
-	.carousel-card {
-		background: rgba(88, 88, 88, 0.8);
-		border: 5px solid black;
-		border-radius: 50px;
-		padding: 20px;
-		color: white;
-	}
-
-	button.carousel-control-next, button.carousel-control-prev {
-		margin-left: -10px;
-		margin-right: -10px;
-		width: 5%;
-	}
 
 	#prev, #next {
 		color: black;
@@ -107,21 +92,32 @@
 	/************ MODELOS *************/
 
 	#last {
+		color: white;
 		margin-top: 50px;
-		padding: 25px 0px;
+		padding: 50px 25px;
+		background: #881616;
+		border-radius: 10px;
+		font-family: morris;
 	}
 
 	#title {
-		background: rgb(88, 88, 88);
-		border: 3px solid black;
+		background: #C8765D;
+		box-shadow: 2px 2px 10px 5px black;
 		padding: 10px 20px;
 		border-radius: 50px;
 		margin-left: 10px;
 	}
 
 	.last-card {
-		background: rgb(88, 88, 88);
-		border: 3px solid black;
+		padding: 20px;
+		border-radius: 10px;
+		background: #C8765D;
+		box-shadow: 2px 2px 10px 5px black;
+	}
+
+	#last img {
+		box-shadow: 2px 2px 10px 5px black;
+		margin: 20px 0px;
 	}
 
 	/************ FOOTER *************/
@@ -129,13 +125,14 @@
 	footer {
 		margin-top: 50px;
 		padding: 15px 0px;
-		background: #000;
+		background: #881616;
 		color: #FFF;
+		font-family: morris;
 	}
 
 	footer a {
 		text-decoration: none;
-		color: rgba(255,255,255,0.5);
+		color: rgba(255,255,255,0.8);
 	}
 
 	footer a:hover {
@@ -151,6 +148,36 @@
 	/* Extra small devices (portrait phones, less than 576px) */
 	@media (max-width: 575.98px) {
 
+		#carousel {
+			padding: 50px 0px;
+			background-image: url('../IMAGENS/mapa.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: morris;
+		}
+
+		.carousel-item {
+			background: #E08743;
+			border: 5px solid black;
+			border-radius: 50px;
+			padding: 20px;
+			color: white;
+		}
+
+		.carousel-image {
+			box-shadow: 2px 2px 10px 5px black;
+		}
+
+
+		.last-card {
+			padding: 20px;
+			border-radius: 10px;
+			background: #C8765D;
+			box-shadow: 2px 2px 10px 5px black;
+			margin: 30px 0px;
+		}
+
 		#footer div {
 			margin: 10px 0px;
 		}
@@ -160,6 +187,36 @@
 /* Small devices (landscape phones, 576px and up) */
 	@media (min-width: 576px) and (max-width: 767.98px) {
 
+		#carousel {
+			padding: 50px 0px;
+			background-image: url('../IMAGENS/mapa.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: morris;
+		}
+
+		.carousel-item {
+			background: #E08743;
+			border: 5px solid black;
+			border-radius: 50px;
+			padding: 20px;
+			color: white;
+		}
+
+		.carousel-image {
+			box-shadow: 2px 2px 10px 5px black;
+		}
+
+
+		.last-card {
+			padding: 20px;
+			border-radius: 10px;
+			background: #C8765D;
+			box-shadow: 2px 2px 10px 5px black;
+			margin: 30px 0px;
+		}
+
 		#footer div {
 			margin: 10px 0px;
 		}
@@ -168,21 +225,99 @@
 
 /* Medium devices (tablets, 768px and up) */
 	@media (min-width: 768px) and (max-width: 991.98px) {
+
+		#carousel {
+			padding: 50px 0px;
+			background-image: url('../IMAGENS/mapa.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: morris;
+		}
+
+		.carousel-image {
+			border: 5px solid black;
+			border-radius: 100px;
+		}
+
+		.carousel-card {
+			background: #E08743;
+			border: 5px solid black;
+			border-radius: 50px;
+			padding: 20px;
+			color: white;
+		}
 		
-		
+		button.carousel-control-next, button.carousel-control-prev {
+			margin-left: -10px;
+			margin-right: -10px;
+			width: 5%;
+		}
 
 	}
 
 /* Large devices (desktops, 992px and up) */
 	@media (min-width: 992px) and (max-width: 1199.98px) {
+
+		#carousel {
+			padding: 50px 0px;
+			background-image: url('../IMAGENS/mapa.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: morris;
+		}
+
+		.carousel-image {
+			border: 5px solid black;
+			border-radius: 100px;
+		}
+
+		.carousel-card {
+			background: #E08743;
+			border: 5px solid black;
+			border-radius: 50px;
+			padding: 20px;
+			color: white;
+		}
 		
-		
+		button.carousel-control-next, button.carousel-control-prev {
+			margin-left: -10px;
+			margin-right: -10px;
+			width: 5%;
+		}
 
 	}
 
 /* Extra large devices (large desktops, 1200px and up) */
 	@media (min-width: 1200px) {
+
+		#carousel {
+			padding: 50px 0px;
+			background-image: url('../IMAGENS/mapa.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			font-family: morris;
+		}
+
+		.carousel-image {
+			border: 5px solid black;
+			border-radius: 100px;
+		}
+
+		.carousel-card {
+			background: #E08743;
+			border: 5px solid black;
+			border-radius: 50px;
+			padding: 20px;
+			color: white;
+		}
 		
-		
+		button.carousel-control-next, button.carousel-control-prev {
+			margin-left: -10px;
+			margin-right: -10px;
+			width: 5%;
+		}
 
 	}
