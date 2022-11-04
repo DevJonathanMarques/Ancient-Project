@@ -5,15 +5,6 @@ create table noticias (
     capa text not null,
     descricao text not null,
     conteudo text not null,
-    classe varchar(6) not null,
+    classe varchar(16) not null,
     idade varchar(16) not null
-)
-
-create table biografias (
-	id int not null PRIMARY KEY AUTO_INCREMENT,
-    titulo text not null,
-    data datetime default CURRENT_TIMESTAMP,
-    capa text not null,
-    descricao text not null,
-    conteudo text not null
 )

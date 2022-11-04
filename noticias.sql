@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Out-2022 às 18:25
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Tempo de geração: 04-Nov-2022 às 18:28
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `mvc`
+-- Banco de dados: `ancient`
 --
 
 -- --------------------------------------------------------
@@ -53,7 +53,6 @@ INSERT INTO `noticias` (`id`, `titulo`, `data`, `capa`, `descricao`, `conteudo`,
 (9, 'Albert Einsten', '2022-09-18 13:30:45', 'Imagens/6c5bc43b443975b806740d8e41146479.jpg', 'Albert Einstein foi um físico teórico alemão que desenvolveu a teoria da relatividade geral, um dos pilares da física moderna ao lado da mecânica quântica.', '\"Albert Einstein (1879-1955) foi um físico alemão, nascido na cidade de Ulm em 1879. Quando jovem, mudou-se para a Suíça, onde se formou, tornando-se professor da Escola Politécnica de Zurique. Em 1903, casou-se com Mileva Maric, com quem teve dois filhos. O casal permaneceu junto até 1919, mesmo tendo vivido os cinco últimos anos do matrimônio separados.\r\n\r\nEinstein foi uma das mentes mais brilhantes da ciência, e o seu legado inclui a explicação do efeito fotoelétrico, a formulação da teoria da relatividade espacial geral e restrita, além de grandes contribuições para a Física Estatística, por meio de sua explicação para o movimento browniano.\"', 'bio', ''),
 (10, 'Napoleão Bonaparte', '2022-09-18 13:33:03', 'Imagens/a6e514f9486b83cb53d8d932f9a04292.jpg', 'Napoleão foi um estadista, líder militar francês nas campanhas das Guerras Revolucionárias Francesas e imperador da França.', 'Napoleão Bonaparte, aclamado pelo povo como herói nacional, no dia 9 de novembro de 1799, promoveu num golpe de Estado o “Golpe do 18 de Brumário”.\r\n\r\nNesta data, ele derrubou o Diretório, dissolveu a Assembleia e assumiu o governo. Implantou o regime de Consulado e foi nomeado Primeiro Cônsul.\r\n\r\nEm 1800 aprovou, em plebiscito, uma Constituição. Em 1802, assinou a paz de Amiens com a Inglaterra.', 'bio', ''),
 (19, 'Nicolas Tesla', '2022-09-24 20:27:58', 'Imagens/fa58572eeaee2d2e7ef6b650b50661dfwebp', 'Nicolas Tesla', 'Nicolas Tesla', 'bio', ''),
-(23, 'Mar Mediterrâneo', '2022-10-13 12:33:24', 'Imagens/1c0f3b94bffda62c9711208b3bf4c968.jpg', 'Mar Mediterrâneo', 'Mar Mediterrâneo', 'mundo', 'antiga'),
 (25, 'Leônidas de Esparta', '2022-10-13 12:38:02', 'Imagens/512b53d89adbc7c4754f8a46740e471e.jpg', 'Leônidas de Esparta', 'Leônidas de Esparta', 'bio', '');
 
 --
