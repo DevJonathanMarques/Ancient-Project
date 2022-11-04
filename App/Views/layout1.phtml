@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head id="html">
 
 	<!-- TÍTULO -->
 	<title>Ancient</title>
@@ -25,13 +25,13 @@
 
 </head>
 
-<body>
+<body id="body">
 
 	<!-- BARRA DE NAVEGAÇÃO -->
-	<nav class="navbar navbar-expand-lg bg-secondary">
+	<nav id="nav" class="navbar navbar-expand-lg">
 		<div class="container-fluid">
 
-			<a class="navbar-brand" href="/"> <img src="IMAGENS/BLACK-ANCIENT.png" class="img-fluid"> </a>
+			<a class="navbar-brand" href="/"> <img src="IMAGENS/logo.png" class="img-fluid"> </a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 
@@ -39,25 +39,39 @@
 
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link active text-white" aria-current="page" href="#">Home</a>
 					</li>
 
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Idades</a>
 						<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Pré-História</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
+						<li><a class="dropdown-item" href="#">Idade Antiga</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Idade Média</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Idade Moderna</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Idade Contemporânea</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Classe</a>
+						<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Mundo</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Brasil</a></li>
 						</ul>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link disabled">Disabled</a>
+						<a class="nav-link active text-white" aria-current="page" href="#">Fotos</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link active text-white" aria-current="page" href="#">Biografias</a>
 					</li>
 				</ul>
 
@@ -71,184 +85,7 @@
 		</div>
 	</nav>
 
-	<!-- CAROUSEL -->
-	<div id="carousel" class="container-fluid mt-5">
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="row">
-						
-						<div class="col-md-6 col-12 d-flex justify-content-center">
-							<div class="col-10"> <img src="IMAGENS/brasil.jpg" class="carousel-image img-fluid"> </div>
-						</div>
-
-						<div class="col-md-6 d-flex">
-							<div class="carousel-card align-self-center col-lg-10">
-								<h1 class="text-center">Descoberta do Brasil</h1>
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<div class="row">
-						
-						<div class="col-md-6 col-12 d-flex justify-content-center">
-							<div class="col-10"> <img src="IMAGENS/egito.jpg" class="carousel-image img-fluid"> </div>
-						</div>
-
-						<div class="col-md-6 d-flex">
-							<div class="carousel-card align-self-center col-lg-10">
-								<h1 class="text-center">Egito Antigo</h1>
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<div class="row">
-						
-						<div class="col-md-6 col-12 d-flex justify-content-center">
-							<div class="col-10"> <img src="IMAGENS/revolucao.jpg" class="carousel-image img-fluid"> </div>
-						</div>
-
-						<div class="col-md-6 d-flex">
-							<div class="carousel-card align-self-center col-lg-10">
-								<h1 class="text-center">Revolução Francesa</h1>
-								<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies accumsan eros, ac vulputate urna. Sed orci tortor, laoreet non sem nec, tristique porttitor leo. Donec a elit sit amet ipsum scelerisque laoreet vitae non turpis. Etiam bibendum gravida rhoncus. Mauris vitae pretium velit.</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-				<i id="prev" class="fa-solid fa-circle-arrow-left fa-3x"></i>
-			</button>
-
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-				<i id="next" class="fa-solid fa-circle-arrow-right fa-3x"></i>
-			</button>
-
-		</div>
-	</div>
-
-	<!-- ÚLTIMAS NOTÍCIAS -->
-	<div id="last" class="container bg-secondary">
-		<div class="col-4"> <h1 id="title">Últimas Artigos</h1> </div>
-
-		<div class="row pt-3 justify-content-around">
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>As Cruzadas</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/cruzadas.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>Revolução Industrial</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/industrial.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>Pré-História</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/pre.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- ÚLTIMAS BIOGRAFIAS -->
-	<div id="last" class="container bg-secondary">
-		<div class="col-5"> <h1 id="title">Últimas Biografias</h1> </div>
-
-		<div class="row pt-3 justify-content-around">
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>Dom Pedro I</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/pedro.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>Getúlio Vargas</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/vargas.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-			<div class="last-card col-3">
-				<div class="col-12"> <h1>Albert Einsten</h1> </div>
-
-				<div class="col-12"> <img src="IMAGENS/einsten.jpg" class="img-fluid"> </div>
-
-				<div class="col-12"> <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- FOOTER -->
-	<footer class="container-fluid">
-		
-		<div class="row d-flex" id="footer">
-			
-			<div class="col-md-3 col-12 align-self-center">
-				<img src="Imagens/WHITE-ANCIENT.png" class="img-fluid">
-			</div>
-
-			<div class="col-md-3 col-lg-2 col-6">
-				<h4>Company</h4>
-				<ul class="navbar-nav">
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Empregos</a></li>
-					<li><a href="">Imprensa</a></li>
-					<li><a href="">Novidade</a></li>
-				</ul>
-			</div>
-
-			<div class="col-md-3 col-lg-2 col-6">
-				<h4>Comunidade</h4>
-				<ul class="navbar-nav">
-					<li><a href="">Professores</a></li>
-					<li><a href="">Jornalistas</a></li>
-					<li><a href="">Desenvolvedores</a></li>
-				</ul>
-			</div>
-
-			<div class="col-md-3 col-lg-2 col-12">
-				<h4>Links úteis</h4>
-				<ul class="navbar-nav">
-					<li><a href="">Ajuda</a></li>
-					<li><a href="">Referências Bibliográficas</a></li>
-					<li><a href="">Caixa Postal</a></li>
-				</ul>
-			</div>
-
-			<div class="col-md-12 col-lg-3 align-self-center">
-				<p>&copy; Copyright 2000-2021 ANCIENT</p>
-			</div>
-
-		</div>
-
-	</footer>
+	<?php $this->content() ?>
 
 </body>
 </html>
