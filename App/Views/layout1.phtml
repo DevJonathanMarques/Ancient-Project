@@ -39,44 +39,44 @@
 
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+						<a class="nav-link active text-white" aria-current="page" href="/">Home</a>
 					</li>
 
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Idades</a>
 						<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Pré-História</a></li>
+						<li><a class="dropdown-item" href="/prehistoria">Pré-História</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Idade Antiga</a></li>
+						<li><a class="dropdown-item" href="/antiga">Idade Antiga</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Idade Média</a></li>
+						<li><a class="dropdown-item" href="/media">Idade Média</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Idade Moderna</a></li>
+						<li><a class="dropdown-item" href="/moderna">Idade Moderna</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Idade Contemporânea</a></li>
+						<li><a class="dropdown-item" href="/contemporanea">Idade Contemporânea</a></li>
 						</ul>
 					</li>
 
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Classe</a>
 						<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Mundo</a></li>
+						<li><a class="dropdown-item" href="/mundo">Mundo</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Brasil</a></li>
+						<li><a class="dropdown-item" href="/brasil">Brasil</a></li>
 						</ul>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#">Fotos</a>
+						<a class="nav-link active text-white" aria-current="page" href="/fotos">Fotos</a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link active text-white" aria-current="page" href="#">Biografias</a>
+						<a class="nav-link active text-white" aria-current="page" href="/biografias">Biografias</a>
 					</li>
 				</ul>
 
-				<form id="search" class="d-flex p-lg-3" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<form id="search" class="d-flex p-lg-3" role="search" method="get" action="/todosRegistros">
+					<input name="dados" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-light" type="submit">Search</button>
 				</form>
 

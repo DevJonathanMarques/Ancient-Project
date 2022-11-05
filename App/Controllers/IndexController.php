@@ -13,15 +13,11 @@
 		public function index(){
 
 			$noticia = Container::getModel('Noticia');
-
-			$this->view->noticiaMundo = $noticia->getNoticiaHome('mundo');
-			$this->view->noticiaBrasil = $noticia->getNoticiaHome('brasil');
-
-			$this->view->noticiasMundo = $noticia->getNoticiasHome('mundo');
-			$this->view->noticiasBrasil = $noticia->getNoticiasHome('brasil');
+			$this->view->carousel = $noticia->getNoticiasHome(3, 3);
+			$this->view->noticias = $noticia->getNoticiasHome(3, 0);
 
 			$biografia = Container::getModel('Biografia');
-			$this->view->biografias = $biografia->getBios(6, 0);
+			$this->view->biografias = $biografia->getBios(3, 0);		
 			
 			$this->render('index', 'layout1');
 
@@ -61,22 +57,14 @@
 				$this->view->pag = 'search';
 
 				if ($this->view->noticias == []) {
-					header('location: /search?erro=erro');
+					header('location: /');
 				}
 				
 				$this->render('search', 'layout1');
 
 			} else {
-				header('location: /search');
+				header('location: /');
 			}
-
-		}
-
-		public function search(){
-
-			$this->view->noticias = '';
-
-			$this->render('search', 'layout1');
 
 		}
 

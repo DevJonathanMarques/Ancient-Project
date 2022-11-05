@@ -69,24 +69,11 @@
 
 		//INDEX////////////////////////////////////////////////////////////////////////////////////////////////////
 		//NOTÍCIAS DA HOME
-		public function getNoticiaHome($classe){
+		public function getNoticiasHome($limit, $offset){
 			
-			$query = "select id, titulo, capa, descricao, date_format(data, '%Y/%m/%d - %H:%i') as data from noticias where classe = :classe order by data desc";
+			$query = "select id, titulo, capa, descricao, date_format(data, '%Y/%m/%d - %H:%i') as data from noticias where classe = 'mundo' or classe = 'brasil' order by data desc limit $offset, $limit";
 
 			$stmt = $this->db->prepare($query);
-			$stmt->bindValue(':classe', $classe);
-			$stmt->execute();
-
-			return $stmt->fetch();
-
-		}
-
-		public function getNoticiasHome($classe){
-			
-			$query = "select id, titulo, capa, descricao, date_format(data, '%Y/%m/%d - %H:%i') as data from noticias where classe = :classe order by data desc limit 1, 2";
-
-			$stmt = $this->db->prepare($query);
-			$stmt->bindValue(':classe', $classe);
 			$stmt->execute();
 
 			return $stmt->fetchAll(\PDO::FETCH_ASSOC);

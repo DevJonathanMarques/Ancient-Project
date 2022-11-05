@@ -20,12 +20,6 @@ class Route extends Bootstrap {
 			'action' => 'todosRegistros'
 		);
 
-		$routes['search'] = array(
-			'route' => '/search',
-			'controller' => 'IndexController',
-			'action' => 'search'
-		);
-
 		$routes['biografias'] = array(
 			'route' => '/biografias',
 			'controller' => 'IndexController',

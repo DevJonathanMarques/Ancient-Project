@@ -1,25 +1,5 @@
 <div class="container p-3 mt-3 mb-4" id="container">
 	<div class="row d-flex justify-content-center">
-		
-		<!-- ÁREA DE PESQUISA -->
-		<div class="row d-flex justify-content-center">
-
-			<div class="col-12 col-md-7">
-				<form action="/todosRegistros" method="get">
-					<div class="input-group">
-
-						<input name="dados" type="text" class="form-control" placeholder="Pesquisa por uma notícia">
-						<div class="input-group-append">
-							<button type="submit" class="btn btn-dark">
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</button>
-						</div>
-
-					</div>
-				</form>
-			</div>
-		</div>
-		<!------------------------------------------------>
 
 		<div class="row mt-3">
 
@@ -36,7 +16,7 @@
 			<!-- ÁREA DE EXIBIÇÃO DOS REGISTROS -->
 			<?php if ($this->view->noticias != '') { foreach ($this->view->noticias as $key => $noticia) { ?>
 			<div class="row d-flex justify-content-center">
-				<div class="cartao col-12 col-md-9 col-lg-6">
+				<div class="cartao col-12 col-md-9 col-lg-7">
 					<h3> <?= $noticia['titulo'] ?> </h3>
 
 					<img src="<?= $noticia['capa'] ?>" class="img-fluid">
